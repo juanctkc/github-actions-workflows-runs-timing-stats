@@ -8,7 +8,7 @@ Tested and Workfs for GHE
 
 ## Usage
 1. Ensure requirements are installed/ working.
-2. Follow [this](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) to generate a personal access token.
+2. Generate a GH token
 3. Run the script with 
 
 ```bash
