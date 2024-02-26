@@ -20,7 +20,7 @@ def main(repo: GithubRepo) -> NoReturn:
         create_time_plt(
             name=f"{repo.repo} - {workflow.get('name', 'n/a')}",
             timings=[repo.workflow_run_timings(r['id'])  for r in repo.workflow_runs(wid)],
-            vertical_line_x="",
+            vertical_line_x="2023-10-23",
             vertical_line_msg="2023-10-23 mark"
 
         )
