@@ -10,7 +10,7 @@ def create_time_plt(name: str, timings: List[List[int]], vertical_line_x: dateti
 
     plt.figure(figsize=(24, 12))
     x_values, y_values = zip(*timings)
-    if vertical_line_x is not None:  
+    if vertical_line_x is None or ((isinstance(vertical_line_x, str) and not vertical_line_x.strip())):
         plt.axvline(x=datetime.strptime(vertical_line_x, "%Y-%m-%d"), color='r', linestyle='--', label=vertical_line_msg)
         plt.text(vertical_line_x, max(y_values), vertical_line_msg, rotation=90, verticalalignment='bottom', ha='right')
     plt.title(name)
