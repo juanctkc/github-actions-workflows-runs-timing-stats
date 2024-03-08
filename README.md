@@ -1,6 +1,5 @@
 # github-actions-workflows-runs-timing-stats
 Python tool to generate GHA workflows runs timing stats for GHE edition
-Tested and Workfs for GHE
 
 ## Requirements
 - python >= 3.5
